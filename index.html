@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+ <section class="mx-auto" >
+    <div class="container">
+        <h1> Offer CountDown</h1>
+
+        
+        <div class="d-flex">
+            <p id="day">0</p>
+            <p class="mx-5">Days</p>
+        </div>
+        <div class="d-flex">
+            <p id="hour">0</p> 
+            <p class="mx-5">Hour</p>
+        </div>
+        <div class="d-flex">
+            <p id="minute">0</p>
+            <p class="mx-5">Minute</p>
+        </div>
+        <div class="d-flex">
+            <p class="secound">1</p>
+            <p class="mx-5">Secound</p>
+        </div>
+    </div>
+
+ </section>
+
+
+ <section>
+       <div class="container">
+        <div class="row bg-light mt-5">
+            <div class="col-lg-4 text-center img-fluid">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAP8AAACUCAMAAABr5Q9hAAAAflBMVEX///8AAAAiIiLb29syMjKgoKE/Pz/Pz8+cnqVVVl1ISlIGBgaio6oZGBiXmaC/v79/gYhSU1fJycl8fHzu7vCGiJANDQx1dXeNj5d2eH9sbna2trZqampMTVHCxMhFRUWTk5Tk5OWqqqqJiYlgYWliYmMpKSmtr7U+P0QdJTqGH8RqAAAEXklEQVR4nO2dgXaqOhBFDagUFVGKFBQ1KKDv/3/wBrwqVbGZuab4ktmu2i5xkrOTCCxraa/XTmivBv9/Vnb4xPEJdsH0oLAx+uGWMW+ohP7DmKWazjzGtpgVsGMs9R0l7KKz8/i/8cV/p6YzPxVNI/wLtnUQZTLY1nf/0xigVqkEzpYViLIhK5A7jh+xx+wBqkY7LNgQUdZX55+lw+0twyJT1Jvw7yPKSpaq8v9dwpSViDLy18ffQpRZ5E/+OoD3f3mUbkD5h55O/vCVrJW/R/5QyN94/y8FWbrAdP8v4/1Lw/37hvvT/IOLQksf/whz/jvWx59FcP8s0sd/jFj/OvkzD/7eslb+Y8P9I/KHYrw/08ifwf1trfzhv1smf/JXkKULyB/n/6kgSxd8kj/5QyF/s/0drfzhn63Ty5/mHwr5k7+CLF1A/uQPLtLLPwAXBeRP/npA/gh/Xyt/H1xE/uSvIEsXkD/5g4tM919p5b8CF5E/+SvI0gXkj/PfK8jSBXuM/04rf/gFMMif/BVk6QLyJ39wEfmTv4IsXYDyHzDGX56kG0z354wNwEXkz/jLk3QD+ZM/uMh0f66VP/+dovcE6T+GF70nSP8I/qJ5TwYR4+Ai8if/lyfpBvJnHFxE/h7mqtnvCPkj3sraa+TvIfy5Z7h/ZBntb/r6F/4aHf/Mnn/D/Xeo/Z/p/pHZ/qavf/I32/9TK3/4RznJ34J/aPI9Md1/ZZE/uIj8zfZPtPJPwEVfWvnDL+VH/uSvIEsXkD/Kv4T/0eh7gvJPtfKH/ysnjebfL81e/+RP/uAi0/3F/h9+0aD3JCgR+/+UWTtbD3aY41/KmNXXA4uh/KNo/Eso7iiKMP6R9XuUituPEP6e4kzfUDsApffu/ooHAOMfeS8nekJjo4KO2/0DO8weHTQ+1y3M73jw0EPWxZcMqWx7dynaIq/XySPFLMyc3nGxOSxmiWBW34tvNYsGcTvTeCpNvAllcKSbrLpv5RT8rFA7JU1msW9PRrV/fNq8uDdvV5/+tb8P+9Ga95DJ+Pst1fftnlNMW4ZhccOsyWK6sQ/r3jGu/O+Ir+ZtcSSYfEy+cdj8zOH6dJkuBG2L48lIVIYfwt+t/afn7edVEz+V/0kaz+HJNswoNF8gLf7rRXP+4+tI3IxA3BhRqbn/t5GQ9/4r3wx8yfx0AYj1P3F7PJ9MZ8sLybJBIsFMmpvX3wuQyZckF5nld2aTQ8J7WZEv89yVYT53zwcbdy5V0SAXPcp1A2XuNuPUGWX6z4V3kfV6ziy/UD/rSvP5ot3r4XQEZp27o3zpwgtR3JmL2U6WYsEsq7m+6C7qy8KHtu3UBEHAjyO3Xg1CcTjcBxtf3IJX4GwC0UGzrdPuPrjd/wfXH4IHW4P6q66X7Jn3+8eRkFomYgKO3Dkjzn8q+4qsOgUU8fzVgPM935/gu4rVE3x5qiTi7uYRwPjJci649COc9nvhNRhwcau6dcS5X3Y6F/kDhmsmM6RZaNQAAAAASUVORK5CYII=" alt="">
+                <h2 class="text-center">Macbook 2024</h2>
+            </div>
+            <div class="col-lg-5 d-flex justify-content-center align-items-center">
+                <button class="bg-danger" onclick="handle('laptop',false)">Remove</button>
+                <input type="text" value="1" id="laptop-count" class="text-center">
+                <button class="bg-success" onclick="handle('laptop',true)">Add</button>
+            </div>
+
+            <div class="col-lg-3">
+                      <div class="d-flex justify-content-center align-items-center h-100">
+                        <span>$</span>
+                        <span>1450</span>
+                      </div>
+                        
+                      </div>
+            </div>
+        <div class="row bg-light mt-5">
+            <div class="col-lg-4 text-center img-fluid">
+                <img src=data:image/jpeg;base64,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>
+                <h2 class="text-center">Airpod pro</h2>
+            </div>
+            <div class="col-lg-5 d-flex justify-content-center align-items-center">
+                <button class="bg-danger" onclick="handle('airpod',false)">Remove</button>
+                <input type="text" value="1" id="airpod-count" class="text-center">
+                <button class="bg-success" onclick="handle('airpod',true)">Add</button>
+            </div>
+
+            <div class="col-lg-3">
+                      <div class="d-flex justify-content-center align-items-center h-100">
+                        <span>$</span>
+                        <span>1450</span>
+                      </div>
+                        
+                      </div>
+            </div>
+        </div>
+       </div>
+ </section>
+
+ <section>
+    <div class="container">
+        <div class="row d-flex justify-content-between bg-light my-5">
+          <div class="col-lg-2">
+            <h3>SubTotal:</h3>
+            <h3>TAX:</h3>
+            <h3>Grand Total:</h3>
+            
+          </div>
+          <div class="col-lg-2">
+            <h3>$1669</h3>
+            <h3>$1669</h3>
+            <h3>$1669</h3>
+
+          </div>
+        </div>
+    </div>
+ </section>
+    <script src="./app.js"></script>
+</body>
+</html>
